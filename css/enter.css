@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+
+@font-face {
+	font-family: 'Valium';
+	src: url("../fonts/valium.otf") format("opentype");
+}
+
+
+body {
+    
+    font-size: 16px;
+    font-family: "Valium";
+    font-weight: 200;
+    margin: 0;
+    background-color: #020203;
+    color: rgb(134, 114, 11);
+    
+}
+
+
+body main {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.section1 {
+  margin-top: 15rem;
+ }
+
+
+
+  
+h1 {
+opacity: 0.8;
+text-align: center;
+font-size: 80px;
+font-weight: 100;
+-webkit-animation: smooth 3s ease-in;
+-moz-animation: smooth 3s ease-in;
+-o-animation: smooth 3s ease-in;
+-ms-animation: smooth 3s ease-in;
+animation: smooth 3s ease-in;
+}
+
+
+
+
+p {
+  
+  color: #bfb196;
+  opacity: 0.9;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 2rem;
+  font-weight: 100;
+
+  -webkit-animation: smooth 7s ease-in;
+  -moz-animation: smooth 7s ease-in;
+  -o-animation: smooth 7s ease-in;
+  -ms-animation: smooth 7s ease-in;
+  animation: smooth 7s ease-in;
+
+
+}
+
+
+
+.enter {
+
+  margin-top: 5rem;
+  margin-left: 37rem;
+  height: 600px;
+  
+
+
+}
+
+.square {
+    background-image:url("../img/btn-backround.jpg");
+    height: 80px;
+    width: 200px;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    
+    -webkit-animation: smooth 7s ease-in;
+    -moz-animation: smooth 7s ease-in;
+    -o-animation: smooth 7s ease-in;
+    -ms-animation: smooth 7s ease-in;
+    animation: smooth 7s ease-in;
+   
+  }
+  
+   
+
+
+  .button:hover {
+    background-color: #000;
+  }
+  
+  
+  .main-content {
+    margin-top: 30px;
+    font-size: 28px;
+    font-family: 'Valium';
+  /*   text-shadow: 0 0 20px white; */
+  }
+  
+  .align-content {
+    position: relative;
+    top: 33px;
+      
+  }
+  .button:active {
+    background-color: #000;
+    box-shadow: 0 3px #1b1b1b;
+    transform: translateY(4px);
+  }
+  .button {
+    box-shadow: 0 7px  #1b1b1b;
+    cursor: pointer;
+  }
+
+  
+  
+
+  .section1 {
+    
+    -webkit-animation: seconds 1.0s forwards;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 3s;
+    animation: seconds 1.0s forwards;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+    position: relative;
+      
+  }
+  
+
+
+
+  @-webkit-keyframes smooth {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+  }
+  
+  @-moz-keyframes smooth {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+  }
+  
+  @-o-keyframes smooth {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+  }
+  
+  @keyframes smooth {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+  }
+  
+  

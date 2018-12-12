@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/enter.css">
+    <title>De forglemte</title>
+</head>
+
+<body>
+    <section id="intro" class="section1">
+        <h1>De forglemte</h1>
+        <p>Skru opp lyden </p>
+        <div class="square button enter">
+            <div class="align-content">
+                <span id="unmuteButton" class="main-content">
+                    Tre inn
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!--Styrer filmen-->
+    <div id="movie" style="display: none;">
+        <video id="videoElement" width="100%" height="100%" src="video/intro.mp4"></video>
+    </div>
+
+    <script>
+        var unmuteButton = document.getElementById("unmuteButton");
+        var videoElement = document.getElementById("videoElement");
+        var sectionIntro = document.getElementById("intro");
+        var sectionMovie = document.getElementById("movie");
+
+        unmuteButton.addEventListener('click', function () {
+            sectionIntro.style.display = "none";
+            sectionMovie.style.display = "block";
+
+            videoElement.play();
+        });
+
+        videoElement.onended = function() {
+            window.location.replace("main.html");
+        };
+    </script>
+</body>
